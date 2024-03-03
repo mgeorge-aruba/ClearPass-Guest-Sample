@@ -57,6 +57,6 @@ def update_guest():
 clientid = credsConfig.clientid
 clientsecret = credsConfig.clientsecret
 login = ClearPassAPILogin(server="https://cxcii.arubasecurity.net:443/api", granttype="client_credentials",clientsecret=clientsecret, clientid=clientid)
-#guest_list = get_guest_list()
-#guest_create = create_guest()
+guest_list = get_guest_list()
+guest_create = create_guest()
 guest_update = update_guest()
